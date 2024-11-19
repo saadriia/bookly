@@ -16,7 +16,7 @@ class ReadApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return GetMaterialApp(
       debugShowCheckedModeBanner: false,
-      home: SplashViwe(),
+      home: const SplashViwe(),
       theme: ThemeData().copyWith(
         scaffoldBackgroundColor: const Color.fromARGB(255, 240, 215, 170),
       ),
