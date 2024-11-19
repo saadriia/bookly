@@ -18,7 +18,7 @@ class ReadApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       home: const SplashViwe(),
       theme: ThemeData().copyWith(
-        scaffoldBackgroundColor: const Color.fromARGB(255, 240, 215, 170),
+        scaffoldBackgroundColor: kPrimaryColor,
       ),
     ); 
   }
