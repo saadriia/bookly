@@ -26,9 +26,9 @@ class _SplashViweBodyState extends State<SplashViweBody>
   }
 
   void navigationToHome() {
-    Future.delayed(const Duration(seconds: 3), () {
+    Future.delayed(const Duration(seconds: 2), () {
       Get.to(() => const HomeView(), transition: Transition.fadeIn, duration: ktranstionDuration);
-      // Navigator.pushReplacementNamed(context, Routes.home);
+     //Navigator.pushReplacementNamed(context, Routes.HomeView);
     //  Get.to(() => HomeView(), transition:Transition.fade);
     });
   }
