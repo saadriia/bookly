@@ -10,29 +10,26 @@ class HomeViewBody extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return  const Column(
-      children: [CustomAppBar(), CustomListviewProducts()],
+    return   Column(
+      children: [CustomAppBar(),
+      // CustomListviewProducts(),
+       slideViweItems()],
     );
   }
 }
 
-class CustomListviewProducts extends StatelessWidget {
-  const CustomListviewProducts({super.key});
+class slideViweItems extends StatelessWidget {
+  const slideViweItems({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-    
-         height: MediaQuery.of(context).size.height*.30,
-         width: 150,
-      decoration:   BoxDecoration( 
-          borderRadius: BorderRadius.circular(20),
-          color: Colors.grey,
-        image: const DecorationImage(
-          image: AssetImage(AssetsData.items , ),
-            fit: BoxFit.cover
-        ),
-      ),
+    return SizedBox(
+      height: MediaQuery.of(context).size.height *.3,
+      child: ListView.builder(
+          scrollDirection: Axis.horizontal,
+          itemBuilder: (context, index) {
+            return const CustomListviewProducts();
+          }),
     );
   }
 }
