@@ -2,7 +2,8 @@ import 'package:bookly_bloc/constance.dart';
 import 'package:bookly_bloc/core/assets.dart';
 import 'package:bookly_bloc/features/home/data/presentation/views/home_view.dart';
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
+//import 'package:get/get_navigation/get_navigation.dart';
+import 'package:go_router/go_router.dart';
 //import 'package:get/get_core/src/get_main.dart';
 
 class SplashViweBody extends StatefulWidget {
@@ -27,10 +28,14 @@ class _SplashViweBodyState extends State<SplashViweBody>
 
   void navigationToHome() {
     Future.delayed(const Duration(seconds: 2), () {
-      Get.to(() => const HomeView(), transition: Transition.fadeIn, duration: ktranstionDuration);
+      GoRouter.of(context).push('/homeView');
+    //  Get.to(() => const HomeView(),
+    // transition: Transition.fadeIn, duration:
+    // ktranstionDuration);
      //Navigator.pushReplacementNamed(context, Routes.HomeView);
     //  Get.to(() => HomeView(), transition:Transition.fade);
-    });
+    },
+    );
   }
 
   void initSlideAnimation() {

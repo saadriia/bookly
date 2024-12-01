@@ -1,6 +1,8 @@
 import 'package:bookly_bloc/constance.dart';
+import 'package:bookly_bloc/core/utils/Routers.dart';
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
+import 'package:go_router/go_router.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 import 'features/splash/presentaionLayer/views/SplashViwe.dart';
 
@@ -14,12 +16,16 @@ class ReadApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return GetMaterialApp(
+    return MaterialApp.router(
+      routerConfig: AppRouter.router ,
       debugShowCheckedModeBanner: false,
-      home: const SplashViwe(),
       theme: ThemeData().copyWith(
         scaffoldBackgroundColor: kPrimaryColor,
+        textTheme: GoogleFonts.cairoTextTheme(
+          ThemeData.light().textTheme,
+        ),
       ),
     ); 
   }
 } 
+
