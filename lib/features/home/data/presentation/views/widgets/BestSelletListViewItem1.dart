@@ -46,12 +46,14 @@ class BestSelletListViewItem1 extends StatelessWidget {
                       style:
                           TextStyle(fontSize: 14, fontWeight: FontWeight.bold),
                     ),
+                    
                   ),
+                  
                 ),
-                const SizedBox(
-                  height: 20,
-                ),
+                  SellerRating(),
+                const SizedBox(  height: 5,),
                 const Text("السعر 200 ريال '"),
+              
               ],
             ),
           ],
@@ -67,9 +69,10 @@ class SellerRating extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const Row(
+      mainAxisAlignment: MainAxisAlignment.center,
       children: [
         Text('4.5/5'),
-        Icon(Icons.star, color: Colors.yellow, size: 20),
+        Icon(Icons.star, color: Color.fromARGB(255, 214, 52, 2), size: 20),
       ],
     );
   }

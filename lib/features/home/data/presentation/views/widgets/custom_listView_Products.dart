@@ -15,7 +15,7 @@ class CustomListviewProducts extends StatelessWidget {
             image:   const DecorationImage(
               fit:BoxFit.fill ,
                 image: AssetImage(
-                  AssetsData.items,
+                  AssetsData.items0,
                 ),
                 //fit: BoxFit.cover,
                 ),
