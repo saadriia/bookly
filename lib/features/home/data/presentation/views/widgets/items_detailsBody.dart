@@ -1,3 +1,5 @@
+import 'package:bookly_bloc/core/utils/style.dart';
+import 'package:bookly_bloc/features/home/data/presentation/views/widgets/similerProduct.dart';
 import 'package:flutter/material.dart';
 
 import 'BestSelletListViewItem1.dart';
@@ -41,8 +43,15 @@ class ItemsDetailsbody extends StatelessWidget {
           // ),
           const SizedBox(height: 5),
           const SellerRating(),
-              const SizedBox(height: 20),
-productsAction(),
+          const SizedBox(height: 20),
+          const productsAction(),          const SizedBox(height: 20),
+
+          const Text( 
+            ' منتجاتنا ',
+            style: Style.textStyle20  ) ,
+                    const SizedBox(height: 20),
+
+          const SimelarProductListView(),
 
         ],
       ),
