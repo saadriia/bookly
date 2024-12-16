@@ -1,6 +1,3 @@
-
-
-
 import 'package:flutter/material.dart';
 
 import '../../../../../../core/assets.dart';
@@ -10,16 +7,21 @@ class CustomAppBar extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return  Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 30 , vertical: 20),
+    return Padding(
+      padding: const EdgeInsets.symmetric(horizontal: 30, vertical: 20),
       child: Row(
         children: [
-          Image.asset(AssetsData.logo,
-          height: 60,
+          Image.asset(
+            AssetsData.logo,
+            height: 60,
           ),
           const Spacer(),
-          IconButton(onPressed: (){},
-           icon: const Icon(Icons.search_rounded , size: 30,)),
+          IconButton(
+              onPressed: () {},
+              icon: const Icon(
+                Icons.search_rounded,
+                size: 30,
+              )),
         ],
       ),
     );

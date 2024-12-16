@@ -17,7 +17,7 @@ class ReadApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp.router(
-      routerConfig: AppRouter.router ,
+      routerConfig: AppRouter.router,
       debugShowCheckedModeBanner: false,
       theme: ThemeData().copyWith(
         scaffoldBackgroundColor: kPrimaryColor,
@@ -25,7 +25,6 @@ class ReadApp extends StatelessWidget {
           ThemeData.light().textTheme,
         ),
       ),
-    ); 
+    );
   }
-} 
-
+}

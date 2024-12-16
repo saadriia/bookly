@@ -46,14 +46,13 @@ class BestSelletListViewItem1 extends StatelessWidget {
                       style:
                           TextStyle(fontSize: 14, fontWeight: FontWeight.bold),
                     ),
-                    
                   ),
-                  
                 ),
-                  SellerRating(),
-                const SizedBox(  height: 5,),
+                SellerRating(),
+                const SizedBox(
+                  height: 5,
+                ),
                 const Text("السعر 200 ريال '"),
-              
               ],
             ),
           ],

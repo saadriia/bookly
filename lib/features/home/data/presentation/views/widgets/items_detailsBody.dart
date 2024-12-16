@@ -44,15 +44,12 @@ class ItemsDetailsbody extends StatelessWidget {
           const SizedBox(height: 5),
           const SellerRating(),
           const SizedBox(height: 20),
-          const productsAction(),          const SizedBox(height: 20),
+          const productsAction(), const SizedBox(height: 20),
 
-          const Text( 
-            ' منتجاتنا ',
-            style: Style.textStyle20  ) ,
-                    const SizedBox(height: 20),
+          const Text(' منتجاتنا ', style: Style.textStyle20),
+          const SizedBox(height: 20),
 
           const SimelarProductListView(),
-
         ],
       ),
     );

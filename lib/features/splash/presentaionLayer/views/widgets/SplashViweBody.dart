@@ -27,19 +27,21 @@ class _SplashViweBodyState extends State<SplashViweBody>
   }
 
   void navigationToHome() {
-    Future.delayed(const Duration(seconds: 2), () {
-      GoRouter.of(context).push('/homeView');
-    //  Get.to(() => const HomeView(),
-    // transition: Transition.fadeIn, duration:
-    // ktranstionDuration);
-     //Navigator.pushReplacementNamed(context, Routes.HomeView);
-    //  Get.to(() => HomeView(), transition:Transition.fade);
-    },
+    Future.delayed(
+      const Duration(seconds: 2),
+      () {
+        GoRouter.of(context).push('/homeView');
+        //  Get.to(() => const HomeView(),
+        // transition: Transition.fadeIn, duration:
+        // ktranstionDuration);
+        //Navigator.pushReplacementNamed(context, Routes.HomeView);
+        //  Get.to(() => HomeView(), transition:Transition.fade);
+      },
     );
   }
 
   void initSlideAnimation() {
-      animationController = AnimationController(
+    animationController = AnimationController(
       duration: const Duration(seconds: 3),
       vsync: this,
     );

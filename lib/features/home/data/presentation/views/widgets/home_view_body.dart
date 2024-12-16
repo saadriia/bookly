@@ -48,30 +48,50 @@ class HomeViewBody extends StatelessWidget {
                   Column(
                     //mainAxisAlignment: MainAxisAlignment.start,
                     children: [
-                      BestSelletListViewItem1(),                const SizedBox(  height: 5,),
-
-                      BestSelletListViewItem2(),                const SizedBox(  height: 5,),
-
-                      BestSelletListViewItem1(),                const SizedBox(  height: 5,),
-
-                      BestSelletListViewItem2(),                const SizedBox(  height: 5,),
-
-                      BestSelletListViewItem1(),                const SizedBox(  height: 5,),
-
+                      BestSelletListViewItem1(),
+                      const SizedBox(
+                        height: 5,
+                      ),
+                      BestSelletListViewItem2(),
+                      const SizedBox(
+                        height: 5,
+                      ),
+                      BestSelletListViewItem1(),
+                      const SizedBox(
+                        height: 5,
+                      ),
+                      BestSelletListViewItem2(),
+                      const SizedBox(
+                        height: 5,
+                      ),
+                      BestSelletListViewItem1(),
+                      const SizedBox(
+                        height: 5,
+                      ),
                     ],
                   ),
                   Column(
                     children: [
-                      BestSelletListViewItem2(),                const SizedBox(  height: 5,),
-
-                      BestSelletListViewItem1(),                const SizedBox(  height: 5,),
-
-                      BestSelletListViewItem2(),                const SizedBox(  height: 5,),
-
-                      BestSelletListViewItem1(),                const SizedBox(  height: 5,),
-
-                      BestSelletListViewItem2(),                const SizedBox(  height: 5,),
-
+                      BestSelletListViewItem2(),
+                      const SizedBox(
+                        height: 5,
+                      ),
+                      BestSelletListViewItem1(),
+                      const SizedBox(
+                        height: 5,
+                      ),
+                      BestSelletListViewItem2(),
+                      const SizedBox(
+                        height: 5,
+                      ),
+                      BestSelletListViewItem1(),
+                      const SizedBox(
+                        height: 5,
+                      ),
+                      BestSelletListViewItem2(),
+                      const SizedBox(
+                        height: 5,
+                      ),
                     ],
                   ),
                 ]),
@@ -165,7 +185,8 @@ class BestSelletListViewItem2 extends StatelessWidget {
                   child: const Center(
                     child: Text(
                       "مغلسة للوجه رخام مدهب 2*2'",
-                      style: TextStyle(fontSize: 14, fontWeight: FontWeight.bold),
+                      style:
+                          TextStyle(fontSize: 14, fontWeight: FontWeight.bold),
                     ),
                   ),
                 ),

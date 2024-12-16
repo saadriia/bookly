@@ -24,10 +24,9 @@ class HomeViewBody extends StatelessWidget {
           SizedBox(
             height: 10,
           ),
-          
-          Column(
-                    crossAxisAlignment: CrossAxisAlignment.end,
 
+          Column(
+            crossAxisAlignment: CrossAxisAlignment.end,
             children: [
               Row(
                 children: [
@@ -45,27 +44,21 @@ class HomeViewBody extends StatelessWidget {
           SizedBox(
             height: 10,
           ),
-      
-                   BestSelletListViewItemlist(),
-                   //BestSelletListViewItemlist(),
+
+          BestSelletListViewItemlist(),
+          //BestSelletListViewItemlist(),
 
           Row(
-            children: [ 
-              
-               //BestSelletListViewItemlist(),
-               //BestSelletListViewItemlist(),
-                
+            children: [
+              //BestSelletListViewItemlist(),
+              //BestSelletListViewItemlist(),
             ],
-            
           ),
           //  BestSelletListViewItem(),
           //BestSelletListViewItem1(),
         ],
-        
       ),
-       
     );
-    
   }
 }
 
@@ -76,12 +69,11 @@ class BestSelletListViewItem1 extends StatelessWidget {
   Widget build(BuildContext context) {
     return SizedBox(
       height: 100,
-      
+
       //MediaQuery.of(context).size.height * .15,
       child: Row(
         mainAxisAlignment: MainAxisAlignment.end,
         children: [
-          
           AspectRatio(
             //MainAxisAlignment: MainAxisAlignment.center,
             aspectRatio: 3 / 4,
@@ -144,17 +136,16 @@ class BestSelletListViewItemlist extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Expanded(
-      
       child: ListView.builder(
-      //  padding: EdgeInsets.zero,
+        //  padding: EdgeInsets.zero,
         itemCount: 10,
         scrollDirection: Axis.vertical,
         itemBuilder: (context, index) {
-                //  mainAxisAlignment: MainAxisAlignment.start,
+          //  mainAxisAlignment: MainAxisAlignment.start,
 
           return const Padding(
-            padding:   EdgeInsets.symmetric(vertical: 10),
-            child:   BestSelletListViewItem1(),
+            padding: EdgeInsets.symmetric(vertical: 10),
+            child: BestSelletListViewItem1(),
           );
         },
       ),

@@ -1,7 +1,3 @@
-
-
-
-
 import 'package:flutter/material.dart';
 
 class CustomItemDetailsAppBar extends StatelessWidget {
@@ -11,9 +7,12 @@ class CustomItemDetailsAppBar extends StatelessWidget {
   Widget build(BuildContext context) {
     return Row(
       children: [
-          IconButton(onPressed: () {}, icon: const Icon(Icons.close_rounded)),
-          const Spacer(),
-          IconButton(onPressed: () {}, icon:const Icon(Icons.shopping_cart_checkout_rounded),),
+        IconButton(onPressed: () {}, icon: const Icon(Icons.close_rounded)),
+        const Spacer(),
+        IconButton(
+          onPressed: () {},
+          icon: const Icon(Icons.shopping_cart_checkout_rounded),
+        ),
       ],
     );
   }
