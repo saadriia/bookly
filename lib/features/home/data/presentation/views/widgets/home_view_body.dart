@@ -24,6 +24,7 @@ class HomeViewBody extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.start,
               children: [
                 CustomAppBar(),
+                //
                 SlideViweItems(),
                 SizedBox(
                   height: 10,
@@ -44,7 +45,9 @@ class HomeViewBody extends StatelessWidget {
                 SizedBox(
                   height: 10,
                 ),
+                //
                 Row(children: [
+                  //
                   Column(
                     //mainAxisAlignment: MainAxisAlignment.start,
                     children: [
@@ -70,6 +73,7 @@ class HomeViewBody extends StatelessWidget {
                       ),
                     ],
                   ),
+                  //
                   Column(
                     children: [
                       BestSelletListViewItem2(),
