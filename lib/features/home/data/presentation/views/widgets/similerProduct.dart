@@ -13,7 +13,10 @@ class SimelarProductListView extends StatelessWidget {
           itemBuilder: (context, index) {
             return const Padding(
               padding: EdgeInsets.symmetric(horizontal: 6),
-              child: CustomListviewProducts(),
+              child: CustomListviewProducts(
+                ImageUrl: ' https://images-na.ssl-images-amazon.com/images/I/61LkaKfxdaL._SL100_.jpg',
+ 
+              ),
             );
           }),
     );

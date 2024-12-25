@@ -29,7 +29,7 @@ class ReadApp extends StatelessWidget {
         BlocProvider(
           create: (context) => FeaturedProductCubit(
             gitIt.get<HomeRepoImpl>(),
-          ),
+          )..fetchfeaturedproduct(),
         ),
         BlocProvider(
           create: (context) => NewsProductCubit(

@@ -18,9 +18,13 @@ class SlideViweItems extends StatelessWidget {
             child: ListView.builder(
                 scrollDirection: Axis.horizontal,
                 itemBuilder: (context, index) {
-                  return const Padding(
+                  return   Padding(
                     padding: EdgeInsets.symmetric(horizontal: 6),
-                    child: CustomListviewProducts(),
+                    child: CustomListviewProducts(
+                    ImageUrl: state.products[index].volumeInfo.imageLinks.thumbnail,
+                    //.products[index].volumeInfo.imageLinks.thumbnail,
+                    
+                     ),
                   );
                 }),
           );

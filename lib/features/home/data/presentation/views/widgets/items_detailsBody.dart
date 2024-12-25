@@ -22,7 +22,10 @@ class ItemsDetailsbody extends StatelessWidget {
           const CustomItemDetailsAppBar(),
           Padding(
             padding: EdgeInsets.symmetric(horizontal: width * .2),
-            child: const CustomListviewProducts(),
+            child: const CustomListviewProducts(
+                              ImageUrl: ' https://images-na.ssl-images-amazon.com/images/I/61LkaKfxdaL._SL100_.jpg',
+
+            ),
           ),
           const SizedBox(height: 20),
           const Text(
